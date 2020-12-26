@@ -1,0 +1,41 @@
+textarea {
+    min-height: 400px;
+}
+
+#emails-view .email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.4em;
+    margin: auto;
+    width: 100%;
+    font-weight: 600;
+    border: 0.125em solid #4b4b4b;
+    text-decoration: none;
+}
+#emails-view .email:hover {
+    color: #007bff;
+}
+#emails-view .email:not(:last-child) {
+    border-bottom: none;
+}
+#emails-view .email .senderAndSubject {
+    display: flex;
+    width: max-content;
+}
+#emails-view .email .subject {
+    margin-left: 1em;
+    color: #616161;
+}
+#emails-view .email .timestamp {
+    color: #616161;
+}
+
+#emails-view .email.wasRead {
+    background-color: #c4c4c4
+}
+
+#email-view #emailContainer .body {
+    margin-top: 1.4em;
+}
